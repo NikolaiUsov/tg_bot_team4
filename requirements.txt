@@ -1,0 +1,6 @@
+langchain==1.2.10
+langchain_openrouter==0.0.2
+dotenv==0.9.9
+transformers==5.2.0
+telebot=0.0.5
+torch==2.10.0

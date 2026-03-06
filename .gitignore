@@ -2,3 +2,5 @@
 myenv/
 .cursorignore
 guide_to_the_world.md
+local_llm.py
+__pycache__

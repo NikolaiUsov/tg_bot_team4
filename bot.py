@@ -1,8 +1,10 @@
 import telebot
 from langchain_openrouter import ChatOpenRouter
+from langchain.messages import HumanMessage, AIMessage, SystemMessage
 import os
 from dotenv import load_dotenv
 from typing import Dict, List
+from rag import collection
 
 # Загружаем переменные из .env
 load_dotenv()
@@ -20,7 +22,7 @@ bot_token = os.getenv("BOT_TOKEN")
 llm = ChatOpenRouter(
     model="openrouter/free",  # конкретная модель или "openrouter/free" - специальный роутер,
     api_key=api_key,  # который автоматически выбирает доступную бесплатную модель
-    temperature=0.5,
+    temperature=0.7,
     max_tokens=1000,
     max_retries=2,
 )

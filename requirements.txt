@@ -4,3 +4,6 @@ dotenv==0.9.9
 transformers==5.2.0
 telebot=0.0.5
 torch==2.10.0
+chromadb==1.5.2
+langchain_text_splitters==1.1.1
+sentence-transformers==5.2.3

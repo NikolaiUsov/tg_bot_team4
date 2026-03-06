@@ -17,7 +17,7 @@ no_repeat_ngram_size=3 → не допускает повторения триг
 """
 
 
-pipe = pipeline("text-generation", model='arcee-ai/AFM-4.5B-Base') #"Qwen/Qwen1.5-4B-Chat"
+pipe = pipeline("text-generation", model='Qwen/Qwen1.5-4B-Chat') #"Qwen/Qwen1.5-4B-Chat"
 messages = [
     {"role": "user", "content": "Привет! кто ты и что умеешь делать?"},
 ]
